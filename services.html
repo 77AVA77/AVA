@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- https://pixabay.com/vectors/last-supper-jesus-line-art-painting-4997321/-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mystyles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.8.2/css/all.css"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/hover.css"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="myScript.js"></script>
+
+  <title>AVA website</title>
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container:hover {
+    cursor: pointer;
+  }
+
+  .container .imaje {
+    filter: grayscale();
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 6px solid whitesmoke;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    transition: filter 0.4s ease-in-out;
+  }
+
+  .container:hover .imaje {
+    filter: none;
+  }
+
+
+  .title {
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    color: black;
+    position: relative;
+  }
+
+  .title::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color:
+      #996043;
+    left: 50%;
+    bottom: -10px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container:hover .title::after {
+    width: 100%;
+    left: 0;
+  }
+
+
+
+
+
+
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgb(115, 164, 255);
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 2s ease-in-out;
+  }
+
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background:
+      #726940;
+  }
+
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 150px;
+  }
+
+  @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+  h1 {
+
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+
+  span:nth-child(1) {
+    animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(2) {
+    animation: fade-in 1s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(3) {
+    animation: fade-in 1s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(4) {
+    animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(5) {
+    animation: fade-in 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(6) {
+    animation: fade-in 1s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(7) {
+    animation: fade-in 1s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(8) {
+    animation: fade-in 1s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(9) {
+    animation: fade-in 1s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(10) {
+    animation: fade-in 1s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(11) {
+    animation: fade-in 1s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(12) {
+    animation: fade-in 1s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(13) {
+    animation: fade-in 1s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  span:nth-child(14) {
+    animation: fade-in 1s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  .H {
+    border: none;
+    margin: auto;
+    text-align: center;
+  }
+
+  .H:focus {
+    outline: none;
+  }
+
+  .H[seamless] {
+    display: block;
+  }
+
+  .su-youtube {
+    margin: 0 auto;
+    display: block;
+  }
+
+audio{
+  margin:auto;
+  display: block;
+}
+</style>
+
+<body oncontextmenu="return false;">
+
+
+  <nav id="navbar" class="navbar navbar-expand-lg  scrolling-navbar  fixed-top">
+    <!--navbar-light bg-light   style="background-color: rgba(255, 255, 255, 0.5);"-->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-2 active"><a class="nav-link text-light " href="index.html"> Home</a>
+        </li>
+        <li class="nav-item px-2"><a class="nav-link text-light" href="about.html">About</a>
+        </li>
+        <li class="nav-item px-2"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+        <li class="nav-item px-2"><a class="nav-link text-light  font-weight-bold" href="services.html">Services</a>
+        </li>
+
+      </ul>
+
+
+
+    </div>
+  </nav>
+
+
+  <div class="containerd mw-100 mh-100 m-0 p-0">
+    <img mclass="mw-100 mh-100"
+      src="https://wallpaperbat.com/img/491557-the-last-supper-wallpaper-top-free-the-last-supper-background.jpg"
+      alt="">
+    <div class="centered">
+      <h1 style="font-size: 22px;">
+        <span>Do</span>
+        <span>unto</span>
+        <span>others</span>
+        <span>as</span>
+        <span>you</span>
+        <span>would</span>
+        <span>have</span>
+        <span>them</span>
+        <span>to</span>
+        <span>do</span>
+        <span>unto</span>
+        <span>you</span>
+        <span>.</span>
+        <a href="https://my.bible.com/bible/2329/MAT.7.%D5%B6%D5%BE%D5%A1%D5%A1" class="text-white" target="_blank"><b><u>
+              <span><u>Matt.</u></span>
+              <span><u>7</u></span>
+              <span><u>:</u></span>
+              <span><u>12</u></span>
+              </ins>
+            </u>
+          </b>
+        </a>
+      </h1>
+    </div>
+    <div class="bottom_centered">
+      <a href="https://hisus.am/" target="_blank">
+        <button class="btn">
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span><b>HISUS.AM</b></span>
+        </button>
+      </a>
+
+    </div>
+  </div>
+  <br>
+  <br>
+  <!--
+  <br>
+  <iframe src="https://www.hisus.am" title="H" class="H w-100 h-75 mx-auto su-youtube su-responsive-media-yes">
+  </iframe>
+  -->
+
+
+  <div class="container">
+    <a href="https://www.youversion.com/the-bible-app/" target="blank" data-placement="bottom" title="Click here!"><img class="imaje"
+        src="data:image/jpeg;base64,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" />
+    </a>
+    <div class="title">YouVersion</div>
+  </div>
+  <br>
+
+  <audio controls autoplay>
+    <source src="Ash_Mourning.mp3" type="audio/ogg">
+    <source src="Ash_Mourning.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+
+</body>
+
+</html>
+
+<!--
+
+
+     <div class="footer-dark w-100 h-50">
+        <footer>
+            <div class="container mh-100">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>AVA Presents</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
+                            rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
+                            vel in justo.</p>
+                    </div>
+                    <div class="col item social mx-auto">
+                        <a class="col-sm-8 d-inline" target="_blank"
+                            href="https://www.facebook.com/Vagharshakavetisyans"><i class="fa fa-facebook"></i></a>
+                        <a class="col-sm-8 d-inline" target="_blank" href="https://www.instagram.com/a.vagharshak.a/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="col-sm-8 d-inline" target="_blank"
+                            href="https://www.youtube.com/channel/UCXodNpoJJfdql5vuiQGDmzg"><i
+                                class="fa fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+            <div class="mh-100 container-fluid bg-dark align-items-center">
+                <p class="copyright col pb-5">AVA Company &#169; 2021</p>
+
+            </div>  
+        </footer>
+-->
