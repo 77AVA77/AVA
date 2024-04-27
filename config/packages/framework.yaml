@@ -6,6 +6,15 @@ framework:
     # Note that the session will be started ONLY if you read or write from it.
     session: true
 
+    assets:
+        packages:
+            images:
+                base_path: packages/images/
+            js:
+                base_path: packages/js/
+            css:
+                base_path: packages/css/
+
     #esi: true
     #fragments: true
 

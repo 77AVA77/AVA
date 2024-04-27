@@ -1,0 +1,22 @@
+{% block header %}
+<div class="header text-center border border-top-0 border-dark">
+    <div class="row align-items-center">
+        <div class="col">
+            {{ weather }}
+        </div>
+        <div class="col-6">
+            <a href="{{ baseUrl }}"><img class="logo" src="{{ asset('logo.jpg', 'images') }}" alt="AVA logo"></a>
+        </div>
+        <div class="col">
+            <form method="get">
+                {% for country in countries %}
+                    <a href="{{ baseUrl ~ '/' ~ country.alias }}">
+                        <img class="country-icon" src="{{ asset('countries/' ~  country.alias ~ '.png', 'images') }}" alt="{{ country.name }}">
+                    </a>
+                {% endfor %}
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
